@@ -1,6 +1,9 @@
 //
 // Created by phoenix on 03/10/23.
 //
+
+// wow what a creative task im sure i'll never have to apply this knowledge ever
+
 #include "iostream"
 using namespace std;
 

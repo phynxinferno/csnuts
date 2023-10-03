@@ -1,3 +1,4 @@
+// Very game-like quiz(questions by real human being who drinks water)
 #include "iostream"
 #include "list"
 #include "chrono"
