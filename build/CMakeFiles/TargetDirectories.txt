@@ -1,0 +1,3 @@
+/home/phoenix/CLionProjects/csnuts/build/CMakeFiles/csnuts.dir
+/home/phoenix/CLionProjects/csnuts/build/CMakeFiles/edit_cache.dir
+/home/phoenix/CLionProjects/csnuts/build/CMakeFiles/rebuild_cache.dir
