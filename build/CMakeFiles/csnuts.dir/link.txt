@@ -1,1 +1,1 @@
-/usr/bin/c++ CMakeFiles/csnuts.dir/main.cpp.o -o csnuts 
+/usr/bin/c++ -g CMakeFiles/csnuts.dir/main.cpp.o -o csnuts 

@@ -135,9 +135,9 @@ CMakeFiles/csnuts.dir/main.cpp.o: \
  /usr/include/c++/13.2.1/bits/locale_facets.tcc \
  /usr/include/c++/13.2.1/bits/basic_ios.tcc \
  /usr/include/c++/13.2.1/bits/ostream.tcc /usr/include/c++/13.2.1/istream \
- /usr/include/c++/13.2.1/bits/istream.tcc /usr/include/c++/13.2.1/math.h \
- /usr/include/c++/13.2.1/cmath /usr/include/math.h \
- /usr/include/bits/math-vector.h /usr/include/bits/libm-simd-decl-stubs.h \
+ /usr/include/c++/13.2.1/bits/istream.tcc /usr/include/c++/13.2.1/cmath \
+ /usr/include/math.h /usr/include/bits/math-vector.h \
+ /usr/include/bits/libm-simd-decl-stubs.h \
  /usr/include/bits/flt-eval-method.h /usr/include/bits/fp-logb.h \
  /usr/include/bits/fp-fast.h \
  /usr/include/bits/mathcalls-helper-functions.h \
@@ -154,12 +154,4 @@ CMakeFiles/csnuts.dir/main.cpp.o: \
  /usr/include/c++/13.2.1/tr1/modified_bessel_func.tcc \
  /usr/include/c++/13.2.1/tr1/poly_hermite.tcc \
  /usr/include/c++/13.2.1/tr1/poly_laguerre.tcc \
- /usr/include/c++/13.2.1/tr1/riemann_zeta.tcc \
- /usr/include/c++/13.2.1/algorithm \
- /usr/include/c++/13.2.1/bits/stl_algo.h \
- /usr/include/c++/13.2.1/bits/algorithmfwd.h \
- /usr/include/c++/13.2.1/bits/stl_heap.h \
- /usr/include/c++/13.2.1/bits/uniform_int_dist.h \
- /usr/include/c++/13.2.1/bits/stl_tempbuf.h \
- /usr/include/c++/13.2.1/pstl/glue_algorithm_defs.h \
- /usr/include/c++/13.2.1/pstl/execution_defs.h
+ /usr/include/c++/13.2.1/tr1/riemann_zeta.tcc
