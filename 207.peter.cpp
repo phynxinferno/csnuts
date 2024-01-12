@@ -4,6 +4,8 @@
 
 //the horse is here(merge sort)
 
+// only works in powers of 2 but is set up for implementing compatibility with other numbers later :3
+
 #include <iostream>
 #include <cmath>
 
@@ -45,14 +47,12 @@ int main(int argc, char** argv) {
                     for(int j = topPosition; true; j--) {
                         // swap the element with the one after it if it's greater, starting with the element of the second subperiod's original position(the element after will always be the value of the original element of the second subperiod)
                         if(arr[j] > arr[j+1]) {
-                            cout << "swapped" << endl;
                             swap(arr[j], arr[j+1]);
                         }
 
                         // if the element hasn't hit the bottom position but is in the right spot, move the bottom position to after it(element after it in its subperiod will always be greater)
                         else if(arr[j + 1] != arr[k]) {
                             bottomPosition = j + 2;
-                            cout << "owen position " << bottomPosition << endl;
                             // increment top position to account for shift
                             topPosition++;
 
@@ -78,7 +78,6 @@ int main(int argc, char** argv) {
     }
 
     // print array :3
-    cout << endl;
     for(int ele : arr) {
         cout << ele << " ";
     }

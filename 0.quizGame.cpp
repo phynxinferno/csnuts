@@ -7,7 +7,7 @@ using namespace std;
 using namespace chrono;
 int main() {
     // Define a list of questions as strings
-    list<string> questions = {
+    const list<string> questions = {
             // Variables and types
             "1In C++, variables must be declared before they can be used",
             "0A 'float' variable can store larger values than a 'double' variable",
@@ -60,7 +60,7 @@ int main() {
          << "Good luck! Your time starts now." << endl << endl;
 
     // Start timing
-    auto start = system_clock::now();
+    const auto start = system_clock::now();
 
     int score = 0;
 
@@ -82,7 +82,7 @@ int main() {
     }
 
     // Calculate the elapsed time
-    duration<double> elapsed_seconds = system_clock::now() - start;
+    const duration<double> elapsed_seconds = system_clock::now() - start;
 
     // Display the quiz results
     cout << "Thanks for playing. You got " << score << "/" << questions.size() << " correct in " << elapsed_seconds.count() << " seconds." << endl;

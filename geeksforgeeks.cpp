@@ -19,6 +19,7 @@ void generateSquare(int n)
 
     // One by one put all values in magic square
     for (int num = 1; num <= n * n;) {
+        cout << num;
         if (i == -1 && j == n) // 3rd condition
         {
             j = n - 2;

@@ -31,16 +31,16 @@ int main() {
             if(order == row) row = 0;
             if(column < 0) column = order - 1;
         }
-        if(square[row][column]) {
+        if(square[column][row]) {
             row -= 2;
             column++;
             continue;
         };
-        square[row][column] = fills + add;
+        square[column][row] = fills + add;
         fills++;
         row++;
         column--;
-    } while(fills != tiles);
+    } while(fills != tiles + 1);
     // log square in a square
 
     for(int i = 0; i < order; i++){

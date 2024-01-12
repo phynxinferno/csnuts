@@ -23,5 +23,5 @@ int t2(int prevTerm, const int* order) {
 }
 int main(int argc, char** argv) {
     const int order = getLine() - 1;
-    cout << t1(3,&order) << endl << (int) (-1 * pow(2,order));
+    cout << t1(3,&order) << endl << (int) t2(-1, &order);
 }
