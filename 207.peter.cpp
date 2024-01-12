@@ -6,6 +6,33 @@
 
 // only works in powers of 2 but is set up for implementing compatibility with other numbers later :3
 
+/*
+ * Accompanying Javascript tester functions
+
+function randomListButReal(ln) {
+	for(var list = ""; ln > 0; ln--)
+		list += (Math.round(Math.random() * 1000) + " ");
+	console.log(list);
+}
+
+function check(output) {
+// add space to end of output before running
+	let current = "";
+	let last;
+	for(let i = 0; i < output.length; i++) {
+		if(output.charAt(i) === ' ') {
+			if(parseInt(current) < parseInt(last)) return false;
+			last = current;
+			current = "";
+		} else {
+			current += ("" + output.charAt(i));
+		}
+	}
+	return true;
+}
+
+ */
+
 #include <iostream>
 #include <cmath>
 
@@ -32,11 +59,11 @@ int main(int argc, char** argv) {
 
     // iterate over each period size until the one after it reaches >= length
     for(int period = 2; ceil(length / (double) (period/2)) != 1; period *= 2) {
+        // declare subperiod
+        subperiod = period / 2;
+
         // iterate over each period(i represents period number)
         for(int i = 0; i < ceil(length / (double) period); i++) {
-                // declare subperiod
-                subperiod = period / 2;
-
                 // set starting positions to merge into(second subperiod)
                 bottomPosition = period * i;
                 topPosition = period * i + subperiod -1;
@@ -83,3 +110,4 @@ int main(int argc, char** argv) {
     }
 
 }
+
