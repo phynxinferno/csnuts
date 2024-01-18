@@ -46,7 +46,6 @@ int getLine() {
 }
 
 int main(int argc, char** argv) {
-
     // array-fetching stuff. not important.
     const int length = getLine();
     int arr[length];
@@ -64,26 +63,24 @@ int main(int argc, char** argv) {
 
         // iterate over each period(i represents period number)
         for(int i = 0; i < ceil(length / (double) period); i++) {
-                // set starting positions to merge into(second subperiod)
-                bottomPosition = period * i;
-                topPosition = period * i + subperiod -1;
+            // set starting positions to merge into(second subperiod)
+                topPosition = (bottomPosition = period * i) + subperiod -1;
 
                 //iterate over elements of the second subperiod;
                 for(int k = period * i + subperiod; k < period * (i+1); k++) {
                     // iterate over elements in first subperiod starting from the end
                     for(int j = topPosition; true; j--) {
+
                         // swap the element with the one after it if it's greater, starting with the element of the second subperiod's original position(the element after will always be the value of the original element of the second subperiod)
-                        if(arr[j] > arr[j+1]) {
-                            swap(arr[j], arr[j+1]);
-                        }
+                        if(arr[j] > arr[j+1]) swap(arr[j], arr[j+1]);
 
                         // if the element hasn't hit the bottom position but is in the right spot, move the bottom position to after it(element after it in its subperiod will always be greater)
                         else if(arr[j + 1] != arr[k]) {
-                            bottomPosition = j + 2;
-                            // increment top position to account for shift
-                            topPosition++;
+                                bottomPosition = j + 2;
+                                // increment top position to account for shift
+                                topPosition++;
 
-                            break;
+                                break;
                         }
 
                         // if it's hit the bottom position, move the bottom position to after it in a simpler manner.
