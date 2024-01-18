@@ -56,10 +56,8 @@ int main(int argc, char** argv) {
     // declare variables(explained later)
     int subperiod, bottomPosition, topPosition;
 
-    // iterate over each period size until the one after it reaches >= length
-    for(int period = 2; ceil(length / (double) (period/2)) != 1; period *= 2) {
-        // declare subperiod
-        subperiod = period / 2;
+    // iterate over each period size until the one after it reaches >= length and declare subperiod
+    for(int period = 2; ceil(length / (double) (subperiod = period/2)) != 1; period *= 2) {
 
         // iterate over each period(i represents period number)
         for(int i = 0; i < ceil(length / (double) period); i++) {
@@ -102,9 +100,7 @@ int main(int argc, char** argv) {
     }
 
     // print array :3
-    for(int ele : arr) {
-        cout << ele << " ";
-    }
+    for(int ele : arr) cout << ele << " ";
 
 }
 

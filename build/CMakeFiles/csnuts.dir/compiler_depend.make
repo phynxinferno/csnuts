@@ -211,15 +211,8 @@ CMakeFiles/csnuts.dir/main.cpp.o: main.cpp \
   /usr/include/c++/13.2.1/tr1/modified_bessel_func.tcc \
   /usr/include/c++/13.2.1/tr1/poly_hermite.tcc \
   /usr/include/c++/13.2.1/tr1/poly_laguerre.tcc \
-  /usr/include/c++/13.2.1/tr1/riemann_zeta.tcc \
-  /usr/include/c++/13.2.1/cstring \
-  /usr/include/string.h \
-  /usr/include/strings.h
+  /usr/include/c++/13.2.1/tr1/riemann_zeta.tcc
 
-
-/usr/include/strings.h:
-
-/usr/include/c++/13.2.1/cstring:
 
 /usr/include/c++/13.2.1/tr1/poly_hermite.tcc:
 
@@ -614,8 +607,6 @@ main.cpp:
 /usr/include/bits/struct_mutex.h:
 
 /usr/include/bits/errno.h:
-
-/usr/include/string.h:
 
 /usr/include/bits/types/struct_FILE.h:
 
