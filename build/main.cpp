@@ -101,7 +101,7 @@ void level4() {
     cout << "🃟͢ The " << *ReadErase(&BjDeck, 0) << " was removed from the deck." << endl;
     unsigned int playerHand = 0;
     do {
-        cout << "🏛 Your hand is currently worth " << playerHand << endl << "\tWould you like to [D]raw or [S]tand? ";
+        cout << "🏛 Your hand is currently worth " << playerHand << endl << "\tWould you like to [d]raw or [s]tand? [D/s]";
         if(BjDeck.size() != 0 && tolower(getLine()[0]) != 's') {
             const Card* Drawn = ReadErase(&BjDeck, rand() % BjDeck.size());
             if(Drawn->face == 4) playerHand += (playerHand > 10) ? 1 : 11;
@@ -129,5 +129,6 @@ int main(int argc, char** argv) {
         offset = (i - 1) * 13;
         for(unsigned int j = 1; j < 14; j++) BaseDeck[offset + j - 1] = Card(&j,&i);
     }
-    level4();
+    cout << "This program bundles the level [3] and level [4] versions of this project. Which would you like to run? [̺3/4]";
+    if(getLine()[0] == '4') level4(); else level3();
 }
